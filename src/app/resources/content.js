@@ -75,7 +75,7 @@ const about = {
     display: true,
   },
   calendar: {
-    display: true,
+    display: false,
     link: "https://cal.com",
   },
   intro: {
@@ -83,9 +83,9 @@ const about = {
     title: "Introduction",
     description: (
       <>
-        Selene is a Jakarta-based design engineer with a passion for transforming complex challenges
-        into simple, elegant design solutions. Her work spans digital interfaces, interactive
-        experiences, and the convergence of design and technology.
+        Gordon is a computer engineer driven by the fusion of hardware and software to power
+        cutting-edge solutions. His work spans automated logistics and full-stack web development, as well 
+        as rocket propulsion projects.
       </>
     ),
   },
@@ -146,8 +146,8 @@ const about = {
     title: "Technical skills",
     skills: [
       {
-        title: "Figma",
-        description: <>Able to prototype in Figma with Once UI with unnatural speed.</>,
+        title: "Rocket Propulsion",
+        description: <>Able to design and build a rocket propulsion system with friends.</>,
         // optional: leave the array empty if you don't want to display images
         images: [
           {
