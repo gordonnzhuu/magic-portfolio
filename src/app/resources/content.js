@@ -1,19 +1,19 @@
 import { InlineCode } from "@/once-ui/components";
 
 const person = {
-  firstName: "Selene",
-  lastName: "Yu",
+  firstName: "Gordon",
+  lastName: "Zhu",
   get name() {
     return `${this.firstName} ${this.lastName}`;
   },
-  role: "Design Engineer",
+  role: "Computer Engineer",
   avatar: "/images/avatar.jpg",
-  location: "Asia/Jakarta", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: ["English", "Bahasa"], // optional: Leave the array empty if you don't want to display languages
+  location: "America/New_York", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
+  languages: ["English"], // optional: Leave the array empty if you don't want to display languages
 };
 
 const newsletter = {
-  display: true,
+  display: false,
   title: <>Subscribe to {person.firstName}'s Newsletter</>,
   description: (
     <>
@@ -29,12 +29,12 @@ const social = [
   {
     name: "GitHub",
     icon: "github",
-    link: "https://github.com/once-ui-system/nextjs-starter",
+    link: "https://github.com/gordonnzhuu",
   },
   {
     name: "LinkedIn",
     icon: "linkedin",
-    link: "https://www.linkedin.com/company/once-ui/",
+    link: "https://www.linkedin.com/in/gordon-zhu-151876299/",
   },
   {
     name: "X",
@@ -44,7 +44,7 @@ const social = [
   {
     name: "Email",
     icon: "email",
-    link: "mailto:example@gmail.com",
+    link: "mailto:gordonnzhuu@gmail.com",
   },
 ];
 
@@ -52,11 +52,13 @@ const home = {
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Design engineer and builder</>,
+  headline: <>Computer engineer </>,
   subline: (
     <>
-      I'm Selene, a design engineer at <InlineCode>FLY</InlineCode>, where I craft intuitive
-      <br /> user experiences. After hours, I build my own projects.
+      I'm Gordon, a junior studying computer engineering at <InlineCode>Boston University</InlineCode>. 
+      My focus lies in embedded systems, where I explore the design and optimization of microcontrollers, 
+      firmware, and real-time software. I enjoy applying theory to hands-on projects, such as building rockets
+      with BURPG.
     </>
   ),
 };
@@ -88,25 +90,25 @@ const about = {
     ),
   },
   work: {
-    display: true, // set to false to hide this section
+    display: true, 
     title: "Work Experience",
     experiences: [
       {
-        company: "FLY",
-        timeframe: "2022 - Present",
-        role: "Senior Design Engineer",
+        company: "Livelo",
+        timeframe: "01/2024 - 07/2024",
+        role: "Full-Stack Engineer Intern",
         achievements: [
           <>
-            Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user
-            engagement and 30% faster load times.
+            Automated key logistics processes using HubSpot and Zapier, optimizing bike rental operations, inventory
+            management, and email shipping updates, resulting in significant improvements in operational efficiency and
+            workflow automation
           </>,
           <>
-            Spearheaded the integration of AI tools into design workflows, enabling designers to
-            iterate 50% faster.
+            Developed dynamic, high performance full-stack web applications using React and Node.js, integrating the 
+            frontend and back-end systems seamlessly to deliver optimized user experiences and fast load times
           </>,
         ],
         images: [
-          // optional: leave the array empty if you don't want to display images
           {
             src: "/images/projects/project-01/cover-01.jpg",
             alt: "Once UI Project",
@@ -116,17 +118,13 @@ const about = {
         ],
       },
       {
-        company: "Creativ3",
-        timeframe: "2018 - 2022",
-        role: "Lead Designer",
+        company: "Burger King",
+        timeframe: "07/2020 - 09/2022",
+        role: "Shift Leader",
         achievements: [
           <>
-            Developed a design system that unified the brand across multiple platforms, improving
-            design consistency by 40%.
-          </>,
-          <>
-            Led a cross-functional team to launch a new product line, contributing to a 15% increase
-            in overall company revenue.
+            Led and coordinated employees during peak hours, guaranteeing efficient operations, excellent customer
+            service, and adherence to food safety standards, while promoting a positive work environment
           </>,
         ],
         images: [],
@@ -134,21 +132,17 @@ const about = {
     ],
   },
   studies: {
-    display: true, // set to false to hide this section
-    title: "Studies",
+    display: true, 
+    title: "Education",
     institutions: [
       {
-        name: "University of Jakarta",
-        description: <>Studied software engineering.</>,
-      },
-      {
-        name: "Build the Future",
-        description: <>Studied online marketing and personal branding.</>,
+        name: "Boston University",
+        description: <>Studying computer engineering with a passion for avionics.</>,
       },
     ],
   },
   technical: {
-    display: true, // set to false to hide this section
+    display: true, 
     title: "Technical skills",
     skills: [
       {
